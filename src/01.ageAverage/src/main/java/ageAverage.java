@@ -15,7 +15,7 @@ import org.apache.hadoop.util.GenericOptionsParser;
 import org.apache.commons.lang.StringEscapeUtils;
 
 
-public class locationCount extends Mapper<Object, Text, Text, IntWritable> {
+public class ageAverage extends Mapper<Object, Text, Text, IntWritable> {
 
 
   // This helper function parses the stackoverflow into a Map for us.
@@ -38,7 +38,7 @@ public class locationCount extends Mapper<Object, Text, Text, IntWritable> {
 
 
   public static class WordCountMapper extends Mapper<Object, Text, Text, IntWritable> {
-    private final static IntWritable one = new IntWritable(1);
+    //private final static IntWritable one = new IntWritable(1);
     private Text word = new Text();
 
     public void map(Object key, Text value, Context context) throws IOException,
@@ -49,22 +49,26 @@ public class locationCount extends Mapper<Object, Text, Text, IntWritable> {
       Map<String, String> parsed = transformXmlToMap(value.toString());
 
       // Grab the "Text" field, since that is what we are counting over
-      String txt = parsed.get("Location");
+      String location = parsed.get("Location");
+      String ageStr = parsed.get("Age");
       
       // .get will return null if the key is not there
-      if (txt == null) { // skip this record
+      if (ageStr == null || location == null) { // skip this record
         return;
       }
 
       // Unescape the HTML because the data is escaped.
-      txt = StringEscapeUtils.unescapeHtml(txt.toLowerCase());   
+      location = StringEscapeUtils.unescapeHtml(location.toLowerCase());   
       
       // Remove some annoying punctuation
-      txt = txt.replaceAll("'", "");           // remove single quotes (e.g., can't) 
-      txt = txt.replaceAll("[^a-zA-Z]", " ");  // replace the rest with a space
+      location = location.replaceAll("'", "");           // remove single quotes (e.g., can't) 
+      location = location.replaceAll("[^a-zA-Z]", " ");  // replace the rest with a space
 
-      word.set(txt);
-      context.write(word, one);
+      word.set(location);
+      
+      IntWritable age = new IntWritable(Integer.parseInt(ageStr));
+      
+      context.write(word, age);
     }
   }
 
@@ -75,11 +79,16 @@ public class locationCount extends Mapper<Object, Text, Text, IntWritable> {
     public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException,
         InterruptedException {
       int sum = 0;
+      int count = 0;
+      
       for (IntWritable val : values) {
         sum += val.get();
+        count++;
       }
-      if (sum>=10) {
-        result.set(sum);
+      
+      // get age average of country where 10 or more persons age are collected 
+      if (count >= 10) {
+        result.set(sum/count);
         context.write(key, result);
       }
     }
@@ -89,12 +98,12 @@ public class locationCount extends Mapper<Object, Text, Text, IntWritable> {
     Configuration conf = new Configuration();
     String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
     if (otherArgs.length != 2) {
-      System.err.println("Usage: locationCnount <in> <out>");
+      System.err.println("Usage: ageAverage <in> <out>");
       System.exit(2);
     }
 
-    Job job = new Job(conf, "locationCount");
-    job.setJarByClass(locationCount.class);
+    Job job = new Job(conf, "ageAverage");
+    job.setJarByClass(ageAverage.class);
     job.setMapperClass(WordCountMapper.class);
     job.setCombinerClass(IntSumReducer.class);
     job.setReducerClass(IntSumReducer.class);
