@@ -1,7 +1,8 @@
 # MapReduce
 
 ### Past Tasks
-> Week4
+
+@Week4
 * JUL, 24, 2015
 	- Pseudo-distribute Environment Implementation  
 	- ageAverage program test as a pseudo-distribute process 
@@ -18,11 +19,11 @@
 	- Implement Location Counter [4, P.22]
 
 
-> Week3
+@Week3
 * JUL, 17, 2015
 	- Analysis Stackoverflow OOM cases [3]
 
-> Week2
+@Week2
 * JUL, 9, 2015
 	- Analysis WordCount’s source code [1][2]
 	- Study Maven 
@@ -33,7 +34,7 @@
 	- Study ITask programming model (*confidential draft paper)
 
 
-> Week1
+@Week1
 * JUL, 3, 2015
 	- Install Hadoop & Java
 	- Execute WordCount for 1-node
