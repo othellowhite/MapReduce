@@ -3,13 +3,13 @@
 ###Week4
 * JUL, 24, 2015
 	- Pseudo-distribute Environment Implementation  
-        - ageAverage program test as a pseudo-distribute process 
-	- elapsed processing time: 1 min 6 s
+	- ageAverage program test as a pseudo-distribute process 
+        - elapsed processing time: 1 min 6 s
 
 * JUL, 22, 2015
 	- Average age based on location program implementation 
-        - ageAverage program test as a single-node process 
-	- elapsed processing time: 1 min 27 s
+	- ageAverage program test as a single-node process 
+        - elapsed processing time: 1 min 27 s
 
 
 * JUL, 21, 2015
