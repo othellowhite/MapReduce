@@ -45,6 +45,9 @@
 
 ### References
 [1] Jeffrey Dean, Sanjay Ghemawat, ‘MapReduce: Simplified Data Processing on Large Clusters’, Google,Inc.
+
 [2] 한기용, ‘Do it! 직접 해보는 하둡 프로그래밍’, 이지스퍼블리싱, 2013.
+
 [3] Lijie Xu, ‘An Empirical study on real-world OOM cases in MapReduce jobs’, Institute of Software, Chinese Academy of Sciences
+
 [4] Donald Miner, Adam Shook, ’MapReduce Design Patterns’, O’Reilly Media,Inc, 2012.
