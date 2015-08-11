@@ -2,6 +2,18 @@
 
 ### Past Tasks
 
+@Week7
+* AUG, 10, 2015
+	- Midterm presentation (with korea government visitor)
+	- Draft of 'running time table' excel filecommitted
+
+@Week6
+* AUG, 7, 2015
+	- Running time Measurement
+	- Prepare for presentation
+
+@Week5 - Silicon valley trip
+
 @Week4
 * JUL, 24, 2015
 	- Pseudo-distribute Environment Implementation  
