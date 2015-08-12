@@ -3,9 +3,15 @@
 ### Past Tasks
 
 @Week7
+
+* AUG, 11, 2015
+	- 03.MinMaxCount program updated (author: Soyeong Park)
+	- 04.ageStdDev program updated (author: Yoonseung Choi)
+
 * AUG, 10, 2015
 	- Midterm presentation (with korea government visitor)
-	- Draft of 'running time table' excel filecommitted
+	- Draft of 'running time table' excel file committed
+
 
 @Week6
 * AUG, 7, 2015
