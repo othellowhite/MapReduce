@@ -4,6 +4,9 @@
 
 @Week7
 
+* AUG, 12, 2015
+	- 05.distributedGrep program updated (author: Yoonseung Choi)
+
 * AUG, 11, 2015
 	- 03.MinMaxCount program updated (author: Soyeong Park)
 	- 04.ageStdDev program updated (author: Yoonseung Choi)
