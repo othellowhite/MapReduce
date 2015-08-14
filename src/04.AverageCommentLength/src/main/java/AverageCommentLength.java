@@ -49,7 +49,7 @@ public class AverageCommentLength extends Mapper<Object, Text, Text, CountAverag
 			
 			// Grab the "CreationDate" and "Text" field, since that is what we are counting over
 			String creationDate = parsed.get("CreationDate");
-			String text = parsed.get("UserId");
+			String text = parsed.get("Text");
 			
 			// .get will return null if the key is not there
 			if (creationDate == null || text == null) { // skip this record
