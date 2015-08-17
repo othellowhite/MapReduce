@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)http://192.168.2.7:50030/jobtasks.jsp?jobid=job_201508170248_0002&type=reduce&pagenum=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Hadoop reduce task list for job_201508170248_0002 on master</title>
+    <link rel="stylesheet" type="text/css" href="./Hadoop reduce task list for job_201508170248_0002 on master_files/hadoop.css">
+  </head>
+<body>
+<h1>Hadoop reduce task list for 
+<a href="http://192.168.2.7:50030/jobdetails.jsp?jobid=job_201508170248_0002">job_201508170248_0002</a> on 
+<a href="http://192.168.2.7:50030/jobtracker.jsp">master</a></h1>
+<hr><h2>All Tasks</h2><center><table border="2" cellpadding="5" cellspacing="2"><tbody><tr><td align="center">Task</td><td>Complete</td><td>Status</td><td>Start Time</td><td>Finish Time</td><td>Errors</td><td>Counters</td></tr><tr><td><a href="http://192.168.2.7:50030/taskdetails.jsp?tipid=task_201508170248_0002_r_000000">task_201508170248_0002_r_000000</a></td><td>0.00%<table border="1px" width="80px"><tbody><tr><td cellspacing="0" class="perc_nonfilled" width="100%"></td></tr></tbody></table></td><td><br></td><td>17-Aug-2015 04:16:02<br></td>
+<td>17-Aug-2015 10:01:39 (5hrs, 45mins, 37sec)<br></td>
+<td><pre>java.lang.RuntimeException: problem advancing post rec#11
+	at org.apache.hadoop.mapred.Task$ValuesIterator.next(Task.java:1217)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceValuesIterator.moveToNext(ReduceTask.java:250)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceValuesIterator.next(ReduceTask.java:246)
+	at oom01$ReduceA.reduce(oom01.java:53)
+	at oom01$ReduceA.reduce(oom01.java:1)
+	at org.apache.hadoop.mapred.ReduceTask.runOldReducer(ReduceTask.java:522)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:421)
+	at org.apache.hadoop.mapred.Child$4.run(Child.java:255)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.mapred.Child.main(Child.java:249)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readFully(DataInputStream.java:197)
+	at org.apache.hadoop.io.Text.readFields(Text.java:265)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableDeserializer.deserialize(WritableSerialization.java:67)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableDeserializer.deserialize(WritableSerialization.java:40)
+	at org.apache.hadoop.mapred.Task$ValuesIterator.readNextValue(Task.java:1276)
+	at org.apache.hadoop.mapred.Task$ValuesIterator.next(Task.java:1214)
+	... 11 more
+
+java.lang.RuntimeException: problem advancing post rec#11
+	at org.apache.hadoop.mapred.Task$ValuesIterator.next(Task.java:1217)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceValuesIterator.moveToNext(ReduceTask.java:250)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceValuesIterator.next(ReduceTask.java:246)
+	at oom01$ReduceA.reduce(oom01.java:53)
+	at oom01$ReduceA.reduce(oom01.java:1)
+	at org.apache.hadoop.mapred.ReduceTask.runOldReducer(ReduceTask.java:522)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:421)
+	at org.apache.hadoop.mapred.Child$4.run(Child.java:255)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.mapred.Child.main(Child.java:249)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readFully(DataInputStream.java:197)
+	at org.apache.hadoop.io.Text.readFields(Text.java:265)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableDeserializer.deserialize(WritableSerialization.java:67)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableDeserializer.deserialize(WritableSerialization.java:40)
+	at org.apache.hadoop.mapred.Task$ValuesIterator.readNextValue(Task.java:1276)
+	at org.apache.hadoop.mapred.Task$ValuesIterator.next(Task.java:1214)
+	... 11 more
+
+java.lang.RuntimeException: problem advancing post rec#11
+	at org.apache.hadoop.mapred.Task$ValuesIterator.next(Task.java:1217)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceValuesIterator.moveToNext(ReduceTask.java:250)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceValuesIterator.next(ReduceTask.java:246)
+	at oom01$ReduceA.reduce(oom01.java:53)
+	at oom01$ReduceA.reduce(oom01.java:1)
+	at org.apache.hadoop.mapred.ReduceTask.runOldReducer(ReduceTask.java:522)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:421)
+	at org.apache.hadoop.mapred.Child$4.run(Child.java:255)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.mapred.Child.main(Child.java:249)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readFully(DataInputStream.java:197)
+	at org.apache.hadoop.io.Text.readFields(Text.java:265)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableDeserializer.deserialize(WritableSerialization.java:67)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableDeserializer.deserialize(WritableSerialization.java:40)
+	at org.apache.hadoop.mapred.Task$ValuesIterator.readNextValue(Task.java:1276)
+	at org.apache.hadoop.mapred.Task$ValuesIterator.next(Task.java:1214)
+	... 11 more
+
+java.lang.RuntimeException: problem advancing post rec#11
+	at org.apache.hadoop.mapred.Task$ValuesIterator.next(Task.java:1217)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceValuesIterator.moveToNext(ReduceTask.java:250)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceValuesIterator.next(ReduceTask.java:246)
+	at oom01$ReduceA.reduce(oom01.java:53)
+	at oom01$ReduceA.reduce(oom01.java:1)
+	at org.apache.hadoop.mapred.ReduceTask.runOldReducer(ReduceTask.java:522)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:421)
+	at org.apache.hadoop.mapred.Child$4.run(Child.java:255)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1190)
+	at org.apache.hadoop.mapred.Child.main(Child.java:249)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readFully(DataInputStream.java:197)
+	at org.apache.hadoop.io.Text.readFields(Text.java:265)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableDeserializer.deserialize(WritableSerialization.java:67)
+	at org.apache.hadoop.io.serializer.WritableSerialization$WritableDeserializer.deserialize(WritableSerialization.java:40)
+	at org.apache.hadoop.mapred.Task$ValuesIterator.readNextValue(Task.java:1276)
+	at org.apache.hadoop.mapred.Task$ValuesIterator.next(Task.java:1214)
+	... 11 more
+
+</pre><br></td>
+<td><a href="http://192.168.2.7:50030/taskstats.jsp?tipid=task_201508170248_0002_r_000000">0</a></td></tr>
+</tbody></table></center>
+
+<hr>
+<a href="http://192.168.2.7:50030/jobtracker.jsp">Go back to JobTracker</a><br>
+<hr>
+This is <a href="http://hadoop.apache.org/">Apache Hadoop</a> release 1.2.1
+
+
+
+</body></html>
