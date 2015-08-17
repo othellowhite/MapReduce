@@ -1,6 +1,8 @@
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -65,7 +67,6 @@ public class CountSD extends Mapper<Object, Text, Text, IntWritable> {
 					
 				// Get the number of all thing, get comment's length information
 				outComment.set(text.length());
-				
 				context.write(outTime, outComment);
 			} catch (java.text.ParseException e) {
 				// TODO Auto-generated catch block
@@ -95,6 +96,8 @@ public class CountSD extends Mapper<Object, Text, Text, IntWritable> {
 				count += 1;
 			}
 			average = sum / count;
+			Collections.sort(commentLength);
+			
 			
 			// Get median value of comment's length
 			if(count % 2 == 0) { // if the count's number is even
@@ -115,7 +118,6 @@ public class CountSD extends Mapper<Object, Text, Text, IntWritable> {
 			result.setStdDev((long)Math.sqrt(variance / (count - 1)));
 			context.write(key, result);
 		}
-		
 	}
 
 	public static void main(String[] args) throws Exception {
@@ -130,10 +132,10 @@ public class CountSD extends Mapper<Object, Text, Text, IntWritable> {
 		// if mapper outputs are different, call setMapOutputKeyClass and
 		// setMapOutputValueClass
 		job.setOutputKeyClass(IntWritable.class);
-		job.setOutputValueClass(CalculateMedNSD.class);
+		job.setOutputValueClass(IntWritable.class);
 
 		job.setMapOutputKeyClass(IntWritable.class);
-		job.setMapOutputValueClass(CalculateMedNSD.class);
+		job.setMapOutputValueClass(IntWritable.class);
 		
 		FileInputFormat.addInputPath(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));

@@ -11,6 +11,9 @@ public class CalculateMedNSD implements Writable {
 	private long median = 0;
 	private long variance = 0;
 	
+	public String toString() {
+		return stdDev + "\t" + median + "\t" + variance;
+	}
 	
 	public void readFields(DataInput in) throws IOException {
 		stdDev = in.readLong();
