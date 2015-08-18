@@ -1,6 +1,7 @@
 // reference: Getting java heap space error while running a mapreduce code for large dataset
 // http://stackoverflow.com/questions/23042829/getting-java-heap-space-error-while-running-a-mapreduce-code-for-large-dataset
 
+package trial;
 
 import java.io.IOException;
 import java.util.*;
@@ -13,7 +14,7 @@ import org.apache.hadoop.mapred.*;
 import org.apache.hadoop.util.*;
 
 
-public class oom01
+public class Trial
 {
 
   public static class MapA extends MapReduceBase implements Mapper<LongWritable, Text, Text, Text> 
@@ -70,8 +71,8 @@ public class oom01
 
   public static void main(String[] args) throws IOException
   {
-    JobConf conf1 = new JobConf(oom01.class);
-    conf1.setJobName("oom01");
+    JobConf conf1 = new JobConf(Trial.class);
+    conf1.setJobName("Trial");
 
     conf1.setOutputKeyClass(Text.class);
     conf1.setOutputValueClass(Text.class);
@@ -88,6 +89,8 @@ public class oom01
 
     JobClient.runJob(conf1);
 
+    System.out.println("##### job1 run #####"); // yoon // chk job1
+    
     JobConf conf2 = new JobConf(Final.class);
     conf2.setJobName("Final");
 
@@ -105,7 +108,8 @@ public class oom01
     FileOutputFormat.setOutputPath(conf2, new Path(args[2]));
 
     JobClient.runJob(conf2);
-
+    
+    System.out.println("##### job2 run #####"); // yoon // chk job2
 
   }
 
