@@ -84,47 +84,55 @@ public class optimizedTrial
     FileInputFormat.setInputPaths(conf1, new Path(otherArgs[0]));
     FileOutputFormat.setOutputPath(conf1, new Path(otherArgs[1]));
 
-    System.out.println("##### job1 run #####"); // yoon // chk phase #1
+    System.out.println("##### phase 1 run #####"); // yoon // chk phase #1
     
     JobClient.runJob(conf1);
 
     
     JobConf conf2 = new JobConf(Intermediate.class);
     conf2.setJobName("Intermediate");
-
-    conf2.setOutputKeyClass(Text.class);
-    conf2.setOutputValueClass(Text.class);
-
+    
     conf2.setMapperClass(Intermediate.MapB.class);
     conf2.setReducerClass(Intermediate.ReduceB.class);
 
-    conf2.setInputFormat(TextInputFormat.class);
-    conf2.setOutputFormat(TextOutputFormat.class);
+    conf2.setInputFormat(KeyValueTextInputFormat.class);
+    
+    // output-type of map phase
+    conf2.setMapOutputKeyClass(Text.class);
+    conf2.setMapOutputValueClass(Text.class);
 
+    // output-type of reduce phase
+    conf2.setOutputKeyClass(Text.class);
+    conf2.setOutputValueClass(Text.class);
+    
     FileInputFormat.setInputPaths(conf2, new Path(otherArgs[1]));
     FileOutputFormat.setOutputPath(conf2, new Path(otherArgs[2]));
 
-    System.out.println("##### job2 run #####"); // yoon // chk phase #2
+    System.out.println("##### phase 2 run #####"); // yoon // chk phase #2
     
     JobClient.runJob(conf2);
     
     
     JobConf conf3 = new JobConf(Final.class);
-    conf2.setJobName("Final");
+    conf3.setJobName("Final");
 
-    conf2.setOutputKeyClass(Text.class);
-    conf2.setOutputValueClass(Text.class);
+    conf3.setMapperClass(Final.MapC.class);
+    conf3.setReducerClass(Final.ReduceC.class);
 
-    conf2.setMapperClass(Final.MapC.class);
-    conf2.setReducerClass(Final.ReduceC.class);
+    conf3.setInputFormat(KeyValueTextInputFormat.class);
 
-    conf2.setInputFormat(TextInputFormat.class);
-    conf2.setOutputFormat(TextOutputFormat.class);
+    // output-type of map phase
+    conf3.setMapOutputKeyClass(Text.class);
+    conf3.setMapOutputValueClass(Text.class);
+
+    // output-type of reduce phase
+    conf3.setOutputKeyClass(Text.class);
+    conf3.setOutputValueClass(Text.class);
 
     FileInputFormat.setInputPaths(conf3, new Path(otherArgs[2]));
     FileOutputFormat.setOutputPath(conf3, new Path(otherArgs[3]));
 
-    System.out.println("##### job3 run #####"); // yoon // chk phase #3
+    System.out.println("##### phase 3 run #####"); // yoon // chk phase #3
     
     JobClient.runJob(conf3);
     
