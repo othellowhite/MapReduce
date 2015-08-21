@@ -1,19 +1,40 @@
 # MapReduce
 
 ### Past Tasks
+@Week10
+* AUG, 26, 2015
+	- Attend the Symposium
+
+
+@Week9
+* AUG, 19, 2015
+	- Test 05.CountSD program update (author: Soyeong Park)
+
+* AUG, 17, 2015
+	- 05.CountSD program updated (author: Soyeong Park)
+	- Test 05.CountSD program update (author: Soyeong Park)
+@Week8
+* AUG, 15, 2015
+	- Test 04.AverageCommentLength's programs (author: Soyeong Park)
+
+* AUG, 14, 2015
+	- Test 03.CountMinMax's programs (author: Soyeong Park)
+
 
 @Week7
-
 * AUG, 12, 2015
 	- 05.distributedGrep program updated (author: Yoonseung Choi)
+	- 04.AverageCommentLength program updated (author: Soyeong Park)
 
 * AUG, 11, 2015
-	- 03.MinMaxCount program updated (author: Soyeong Park)
+	- 03.CountMinMax program updated (author: Soyeong Park)
 	- 04.ageStdDev program updated (author: Yoonseung Choi)
 
 * AUG, 10, 2015
 	- Midterm presentation (with korea government visitor)
 	- Draft of 'running time table' excel file committed
+	- 00.CountLocation program updated (author: Soyeong Park)
+	- 01.AverageLocation program updated (author: Soyeong Park)
 
 
 @Week6
