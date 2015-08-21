@@ -13,6 +13,8 @@
 * AUG, 17, 2015
 	- 05.CountSD program updated (author: Soyeong Park)
 	- Test 05.CountSD program update (author: Soyeong Park)
+	
+
 @Week8
 * AUG, 15, 2015
 	- Test 04.AverageCommentLength's programs (author: Soyeong Park)
