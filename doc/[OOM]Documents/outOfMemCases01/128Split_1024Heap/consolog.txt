@@ -1,0 +1,155 @@
+Johnny:~ Yoonseung$ hadoop jar Desktop/HadoopWorks/outOfMemoryExamples/outOfMemCase01/target/outOfMemCase01-0.0.1-SNAPSHOT.jar trial.Trial hdfs/sample.txt intrm2 final
+Warning: $HADOOP_HOME is deprecated.
+
+15/08/22 00:13:29 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+15/08/22 00:13:30 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/08/22 00:13:30 WARN snappy.LoadSnappy: Snappy native library not loaded
+15/08/22 00:13:30 INFO mapred.FileInputFormat: Total input paths to process : 1
+15/08/22 00:13:30 INFO net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
+15/08/22 00:13:30 INFO mapred.JobClient: Running job: job_201508212347_0003
+15/08/22 00:13:31 INFO mapred.JobClient:  map 0% reduce 0%
+15/08/22 00:13:50 INFO mapred.JobClient:  map 2% reduce 0%
+15/08/22 00:13:53 INFO mapred.JobClient:  map 4% reduce 0%
+15/08/22 00:13:56 INFO mapred.JobClient:  map 5% reduce 0%
+15/08/22 00:13:59 INFO mapred.JobClient:  map 7% reduce 0%
+15/08/22 00:14:02 INFO mapred.JobClient:  map 9% reduce 0%
+15/08/22 00:14:05 INFO mapred.JobClient:  map 11% reduce 0%
+15/08/22 00:14:08 INFO mapred.JobClient:  map 13% reduce 0%
+15/08/22 00:14:11 INFO mapred.JobClient:  map 14% reduce 0%
+15/08/22 00:14:14 INFO mapred.JobClient:  map 16% reduce 0%
+15/08/22 00:14:17 INFO mapred.JobClient:  map 18% reduce 0%
+15/08/22 00:14:20 INFO mapred.JobClient:  map 20% reduce 0%
+15/08/22 00:14:23 INFO mapred.JobClient:  map 21% reduce 0%
+15/08/22 00:14:26 INFO mapred.JobClient:  map 23% reduce 0%
+15/08/22 00:14:29 INFO mapred.JobClient:  map 25% reduce 0%
+15/08/22 00:14:32 INFO mapred.JobClient:  map 27% reduce 0%
+15/08/22 00:14:35 INFO mapred.JobClient:  map 28% reduce 0%
+15/08/22 00:14:38 INFO mapred.JobClient:  map 30% reduce 0%
+15/08/22 00:14:41 INFO mapred.JobClient:  map 31% reduce 0%
+15/08/22 00:14:44 INFO mapred.JobClient:  map 33% reduce 0%
+15/08/22 00:14:47 INFO mapred.JobClient:  map 34% reduce 0%
+15/08/22 00:14:50 INFO mapred.JobClient:  map 35% reduce 0%
+15/08/22 00:14:53 INFO mapred.JobClient:  map 37% reduce 0%
+15/08/22 00:14:56 INFO mapred.JobClient:  map 38% reduce 0%
+15/08/22 00:14:59 INFO mapred.JobClient:  map 39% reduce 0%
+15/08/22 00:15:16 INFO mapred.JobClient:  map 40% reduce 0%
+15/08/22 00:15:22 INFO mapred.JobClient:  map 41% reduce 0%
+15/08/22 00:15:25 INFO mapred.JobClient:  map 41% reduce 3%
+15/08/22 00:15:28 INFO mapred.JobClient:  map 42% reduce 3%
+15/08/22 00:15:34 INFO mapred.JobClient:  map 43% reduce 3%
+15/08/22 00:15:40 INFO mapred.JobClient:  map 44% reduce 3%
+15/08/22 00:15:49 INFO mapred.JobClient:  map 45% reduce 3%
+15/08/22 00:15:55 INFO mapred.JobClient:  map 46% reduce 3%
+15/08/22 00:15:58 INFO mapred.JobClient:  map 47% reduce 3%
+15/08/22 00:16:01 INFO mapred.JobClient:  map 48% reduce 6%
+15/08/22 00:16:04 INFO mapred.JobClient:  map 49% reduce 6%
+15/08/22 00:16:07 INFO mapred.JobClient:  map 50% reduce 6%
+15/08/22 00:16:10 INFO mapred.JobClient:  map 51% reduce 6%
+15/08/22 00:16:13 INFO mapred.JobClient:  map 52% reduce 10%
+15/08/22 00:16:16 INFO mapred.JobClient:  map 53% reduce 10%
+15/08/22 00:16:19 INFO mapred.JobClient:  map 54% reduce 10%
+15/08/22 00:16:22 INFO mapred.JobClient:  map 55% reduce 10%
+15/08/22 00:16:25 INFO mapred.JobClient:  map 57% reduce 13%
+15/08/22 00:16:28 INFO mapred.JobClient:  map 58% reduce 13%
+15/08/22 00:16:31 INFO mapred.JobClient:  map 59% reduce 13%
+15/08/22 00:16:34 INFO mapred.JobClient:  map 61% reduce 13%
+15/08/22 00:16:37 INFO mapred.JobClient:  map 63% reduce 13%
+15/08/22 00:16:40 INFO mapred.JobClient:  map 64% reduce 13%
+15/08/22 00:16:43 INFO mapred.JobClient:  map 65% reduce 13%
+15/08/22 00:16:46 INFO mapred.JobClient:  map 66% reduce 13%
+15/08/22 00:16:49 INFO mapred.JobClient:  map 68% reduce 13%
+15/08/22 00:16:52 INFO mapred.JobClient:  map 69% reduce 13%
+15/08/22 00:16:56 INFO mapred.JobClient:  map 70% reduce 13%
+15/08/22 00:16:59 INFO mapred.JobClient:  map 72% reduce 13%
+15/08/22 00:17:02 INFO mapred.JobClient:  map 73% reduce 13%
+15/08/22 00:17:05 INFO mapred.JobClient:  map 74% reduce 13%
+15/08/22 00:17:08 INFO mapred.JobClient:  map 76% reduce 13%
+15/08/22 00:17:11 INFO mapred.JobClient:  map 77% reduce 13%
+15/08/22 00:17:14 INFO mapred.JobClient:  map 78% reduce 13%
+15/08/22 00:17:17 INFO mapred.JobClient:  map 80% reduce 13%
+15/08/22 00:17:41 INFO mapred.JobClient:  map 81% reduce 13%
+15/08/22 00:17:44 INFO mapred.JobClient:  map 81% reduce 16%
+15/08/22 00:17:47 INFO mapred.JobClient:  map 82% reduce 16%
+15/08/22 00:17:53 INFO mapred.JobClient:  map 83% reduce 16%
+15/08/22 00:17:59 INFO mapred.JobClient:  map 84% reduce 16%
+15/08/22 00:18:05 INFO mapred.JobClient:  map 85% reduce 16%
+15/08/22 00:18:08 INFO mapred.JobClient:  map 86% reduce 16%
+15/08/22 00:18:11 INFO mapred.JobClient:  map 87% reduce 16%
+15/08/22 00:18:14 INFO mapred.JobClient:  map 88% reduce 16%
+15/08/22 00:18:17 INFO mapred.JobClient:  map 89% reduce 16%
+15/08/22 00:18:20 INFO mapred.JobClient:  map 90% reduce 20%
+15/08/22 00:18:23 INFO mapred.JobClient:  map 91% reduce 20%
+15/08/22 00:18:26 INFO mapred.JobClient:  map 92% reduce 20%
+15/08/22 00:18:29 INFO mapred.JobClient:  map 93% reduce 20%
+15/08/22 00:18:32 INFO mapred.JobClient:  map 94% reduce 23%
+15/08/22 00:18:38 INFO mapred.JobClient:  map 95% reduce 23%
+15/08/22 00:18:44 INFO mapred.JobClient:  map 96% reduce 23%
+15/08/22 00:18:47 INFO mapred.JobClient:  map 96% reduce 26%
+15/08/22 00:18:50 INFO mapred.JobClient:  map 97% reduce 26%
+15/08/22 00:18:53 INFO mapred.JobClient:  map 98% reduce 26%
+15/08/22 00:18:56 INFO mapred.JobClient:  map 99% reduce 26%
+15/08/22 00:19:17 INFO mapred.JobClient:  map 99% reduce 30%
+15/08/22 00:19:20 INFO mapred.JobClient:  map 100% reduce 30%
+15/08/22 00:19:44 INFO mapred.JobClient:  map 100% reduce 66%
+15/08/22 00:21:09 INFO mapred.JobClient:  map 100% reduce 67%
+15/08/22 00:22:23 INFO mapred.JobClient:  map 100% reduce 69%
+15/08/22 00:23:44 INFO mapred.JobClient:  map 100% reduce 70%
+15/08/22 00:24:59 INFO mapred.JobClient:  map 100% reduce 71%
+15/08/22 00:26:20 INFO mapred.JobClient:  map 100% reduce 72%
+15/08/22 00:27:42 INFO mapred.JobClient:  map 100% reduce 74%
+15/08/22 00:28:54 INFO mapred.JobClient:  map 100% reduce 75%
+15/08/22 00:30:14 INFO mapred.JobClient:  map 100% reduce 76%
+15/08/22 00:31:36 INFO mapred.JobClient:  map 100% reduce 77%
+15/08/22 00:32:51 INFO mapred.JobClient:  map 100% reduce 79%
+15/08/22 00:34:12 INFO mapred.JobClient:  map 100% reduce 80%
+15/08/22 00:35:36 INFO mapred.JobClient:  map 100% reduce 81%
+15/08/22 00:37:01 INFO mapred.JobClient:  map 100% reduce 82%
+15/08/22 00:38:15 INFO mapred.JobClient:  map 100% reduce 83%
+15/08/22 00:39:48 INFO mapred.JobClient:  map 100% reduce 85%
+15/08/22 00:41:18 INFO mapred.JobClient:  map 100% reduce 86%
+15/08/22 00:42:40 INFO mapred.JobClient:  map 100% reduce 87%
+15/08/22 00:44:07 INFO mapred.JobClient:  map 100% reduce 88%
+15/08/22 00:45:30 INFO mapred.JobClient:  map 100% reduce 90%
+15/08/22 00:47:03 INFO mapred.JobClient:  map 100% reduce 91%
+15/08/22 00:48:28 INFO mapred.JobClient:  map 100% reduce 92%
+15/08/22 00:49:52 INFO mapred.JobClient:  map 100% reduce 93%
+15/08/22 00:51:25 INFO mapred.JobClient:  map 100% reduce 95%
+15/08/22 00:52:52 INFO mapred.JobClient:  map 100% reduce 96%
+15/08/22 00:54:26 INFO mapred.JobClient:  map 100% reduce 97%
+15/08/22 00:55:44 INFO mapred.JobClient:  map 100% reduce 98%
+15/08/22 00:57:07 INFO mapred.JobClient:  map 100% reduce 100%
+15/08/22 00:57:15 INFO mapred.JobClient: Job complete: job_201508212347_0003
+15/08/22 00:57:15 INFO mapred.JobClient: Counters: 28
+15/08/22 00:57:15 INFO mapred.JobClient:   Map-Reduce Framework
+15/08/22 00:57:15 INFO mapred.JobClient:     Spilled Records=1249384552
+15/08/22 00:57:15 INFO mapred.JobClient:     Map output materialized bytes=3900000021
+15/08/22 00:57:15 INFO mapred.JobClient:     Reduce input records=299999997
+15/08/22 00:57:15 INFO mapred.JobClient:     Map input records=99999999
+15/08/22 00:57:15 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1050
+15/08/22 00:57:15 INFO mapred.JobClient:     Map output bytes=3299999967
+15/08/22 00:57:15 INFO mapred.JobClient:     Reduce shuffle bytes=3497346816
+15/08/22 00:57:15 INFO mapred.JobClient:     Map input bytes=1299999987
+15/08/22 00:57:15 INFO mapred.JobClient:     Reduce input groups=27
+15/08/22 00:57:15 INFO mapred.JobClient:     Combine output records=0
+15/08/22 00:57:15 INFO mapred.JobClient:     Reduce output records=299999997
+15/08/22 00:57:15 INFO mapred.JobClient:     Map output records=299999997
+15/08/22 00:57:15 INFO mapred.JobClient:     Combine input records=0
+15/08/22 00:57:15 INFO mapred.JobClient:     Total committed heap usage (bytes)=5608308736
+15/08/22 00:57:15 INFO mapred.JobClient:   File Input Format Counters 
+15/08/22 00:57:15 INFO mapred.JobClient:     Bytes Read=1300036860
+15/08/22 00:57:15 INFO mapred.JobClient:   FileSystemCounters
+15/08/22 00:57:15 INFO mapred.JobClient:     HDFS_BYTES_READ=1300037910
+15/08/22 00:57:15 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=16242243576
+15/08/22 00:57:15 INFO mapred.JobClient:     FILE_BYTES_READ=12342006943
+15/08/22 00:57:15 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=4799999952
+15/08/22 00:57:15 INFO mapred.JobClient:   File Output Format Counters 
+15/08/22 00:57:15 INFO mapred.JobClient:     Bytes Written=4799999952
+15/08/22 00:57:15 INFO mapred.JobClient:   Job Counters 
+15/08/22 00:57:15 INFO mapred.JobClient:     Launched map tasks=10
+15/08/22 00:57:15 INFO mapred.JobClient:     Launched reduce tasks=1
+15/08/22 00:57:15 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=2518775
+15/08/22 00:57:15 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+15/08/22 00:57:15 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=1177738
+15/08/22 00:57:15 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+15/08/22 00:57:15 INFO mapred.JobClient:     Rack-local map tasks=9
+15/08/22 00:57:15 INFO mapred.JobClient:     Data-local map tasks=1
