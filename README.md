@@ -7,28 +7,15 @@
 
 
 @Week9
-* AUG, 21, 2015
-	- [Research note] Introduction updated (authored by Yoonseung)
-	- [Presentation] OOM Case Simulation contents updated (authored by Yoonseung)
-
-* AUG, 18, 2015
-	- [OOM Case 01.] Alternative algorithm updated (authored by Yoonseung)
-
 * AUG, 19, 2015
-	- [OOM Case 01.] Simulation executed in Pseudo-distributed operation
 	- Test 05.CountSD program update (author: Soyeong Park)
 
 * AUG, 17, 2015
-	- [OOM Case 01.] Simulation executed in Fully-distributed operation
-	- [OOM Case 01.] revised (authored by Yoonseung)
 	- 05.CountSD program updated (author: Soyeong Park)
 	- Test 05.CountSD program update (author: Soyeong Park)
 	
 
 @Week8
-* Aug, 16, 2015
-	- Stackoverflow.com OOM Case uploaded (authored by Yoonseung)
-
 * AUG, 15, 2015
 	- Test 04.AverageCommentLength's programs (author: Soyeong Park)
 
